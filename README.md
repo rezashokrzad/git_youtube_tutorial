@@ -1,5 +1,4 @@
-This is the first attempt. This change happens in GUI. Hello.
-We are learning conflict handling!
-This is the test for conflict handling.
-This is the second attempt. This change happens in CLI!
-This is the third attempt!
+This repo is provided to practice Python programming in both basics and Mahicne Learning challenges.
+
+This is a public repo and everybody can contribute to develope their own solution for every challenge. 
+
