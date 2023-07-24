@@ -8,3 +8,13 @@ def reverse_string(input_string):
 user_input = input("Enter a favorite string: ")
 reversed_input = reverse_string(user_input)
 print("Reversed string:", reversed_input)
+
+
+#new_solution;
+def reverse(string):
+    string="".join(reversed(string))
+    print(f"reversed string is {string}",end="")
+
+string=input("enter string:")
+print(f"orginal string: {string}")
+reverse(string)
