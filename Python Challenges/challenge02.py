@@ -5,9 +5,14 @@ for i in range(1, num+1):
     fact*=i
 print(f"Your Factorial: {fact}")
 
-# or 
-# num = int(input("Enter Your Number for calculates the factorial : "))
-# fact = 1
-# for i in range(1, num+1):
-    # fact *= i
-    # print(f"Step {i} → next: {fact}", end=", ")
+#new_solution:
+number=int(input("enter a number: "))
+factorial=1
+if number<0:
+    print(f"num is {number},factorial does not exist for negative numbers!")
+elif number ==0:
+    print(f"factorial of {number} is 1")
+else:
+    for i in range(1,number+1):
+        factorial*=i
+    print(f"the factorial of {number} is {factorial}")
