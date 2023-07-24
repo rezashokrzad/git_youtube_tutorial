@@ -14,7 +14,6 @@ def GCD(num1,num2):
 def LCM(num1,num2):
     return (num1*num2) // GCD(num1,num2)
         
-    return F_LCM
 number1=int(input("ٍenter the first number: "))
 number2=int(input("enter the second number:  "))
 print("GCD is: ",GCD(number1,number2))
