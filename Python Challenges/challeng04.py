@@ -12,3 +12,15 @@ if is_palindrome(input_string):
     print("The string is a palindrome.")
 else:
     print("The string is not a palindrome.")
+
+
+#new_solution:
+string=input("enter a string: ")
+string
+R_word=""
+for i in string:
+    R_word=i+R_word
+if (string == new_word):
+    print(f"{string} = {R_word}\n{string} is palindrome")
+else:
+    print(f"{string} != {R_word}\n{string} isn't a palindrome!" )
