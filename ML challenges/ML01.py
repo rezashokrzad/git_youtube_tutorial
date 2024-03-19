@@ -27,7 +27,7 @@ test_loss,test_acc=model.evaluate(test_img,test_labels)
 print(test_acc)
 
 
-ptint(test_labels[55])
+print(test_labels[55])
 model.predict(test_img[[55]]).argmax()
 _______________________________________
 
