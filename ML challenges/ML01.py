@@ -1,4 +1,35 @@
 #MNIST Handwritten Digit Classification: Build a machine learning model that can correctly classify handwritten digits from the MNIST dataset.
+#MNIST Handwritten Digit Classification with keras
+from tensorflow import keras
+from tensorflow.keras import layers
+from tensorflow.keras.datasets import mnist
+
+(train_img,train_labels) , (test_img,test_labels)=mnist.load_data()
+
+print(f"train images shape : {train_img.shape}\ntrain labels shape :{train_labels.shape}")
+print(f"Test images shape : {test_img.shape}\nTest labels shape :{test_labels.shape}")
+
+model=keras.Sequential(
+[
+    layers.Dense(15,activation="relu"),
+    layers.Dense(10,activation="softmax")
+])
+model.compile(optimizer="rmsprop",loss="sparse_categorical_crossentropy",metrics=["accuracy"])
+
+train_img=train_img.reshape((60000,28*28))
+test_img=test_img.reshape((10000,28*28))
+train_img=train_img/255
+test_img=test_img/255
+
+model.fit(train_img,train_labels,epochs=15)
+
+test_loss,test_acc=model.evaluate(test_img,test_labels)
+print(test_acc)
+
+
+ptint(test_labels[55])
+model.predict(test_img[[55]]).argmax()
+_______________________________________
 
 # MNIST handwritten digits classification with KNN (Mohammadreza Tale Akmal)
 import numpy as np
