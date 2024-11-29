@@ -24,3 +24,27 @@ if (string == new_word):
     print(f"{string} = {R_word}\n{string} is palindrome")
 else:
     print(f"{string} != {R_word}\n{string} isn't a palindrome!" )
+
+
+def is_palindrome_two_pointer(string):
+    # Remove whitespace and convert to lowercase
+    string = string.lower().replace(" ", "")
+    
+    # Initialize two pointers
+    left = 0
+    right = len(string) - 1
+    
+    # Compare characters from both ends moving towards center
+    while left < right:
+        if string[left] != string[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+
+# Test the function
+test_strings = ["radar", "Hello", "A man a plan a canal Panama", "race a car"]
+
+for test_str in test_strings:
+    result = is_palindrome_two_pointer(test_str)
+    print(f'"{test_str}" -> {"is" if result else "is not"} a palindrome')
