@@ -4,7 +4,7 @@ connecting local git to cloud
 git remote add origin git@github.com:HosseinEyvazi/test.git
 ----------------------------------------------------------------------------------------------
 pushing for the first time
-$ git push -u origin main
+$ git push -u origin master (branch name)
 
 pushing for next times
 $ git push
