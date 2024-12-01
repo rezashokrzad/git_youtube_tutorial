@@ -1,0 +1,37 @@
+https://monica.im/share/chat?shareId=onaTuJz8xOSGXbcS&copied=1
+----------------------------------------------------------------------------------------------
+connecting local git to cloud
+git remote add origin git@github.com:HosseinEyvazi/test.git
+----------------------------------------------------------------------------------------------
+pushing for the first time
+$ git push -u origin master (branch name)
+
+pushing for next times
+$ git push
+----------------------------------------------------------------------------------------------
+look at this scenario :
+if you change a file on ur device
+and you commit ur changes 
+and other one changed this file too , before
+and you push the file into project
+this push will reject , and says you have to pull first
+after pulling :
+1- there are not any conflict 
+2-there are some cconflicts -> you have to 
+------------------------------------------------------------------------------------------------
+fork in github is equal to branch in local
+------------------------------------------------------------------------------------------------
+https://monica.im/share/chat?shareId=zsyQJNNhzRIOWJb8&copied=1
+
+
+
+
+
+
+
+
+
+
+
+
+
