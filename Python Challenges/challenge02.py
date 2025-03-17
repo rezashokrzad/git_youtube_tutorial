@@ -16,3 +16,10 @@ else:
     for i in range(1,number+1):
         factorial*=i
     print(f"the factorial of {number} is {factorial}")
+
+######### Solution 3 by Negar Deilami 3.12.25 
+number3 = int(input('give me an integer '))
+num3 = 1
+for i in range(1,number3+1):
+    num3 = num3 * i
+print(num3)

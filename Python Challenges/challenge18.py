@@ -8,3 +8,10 @@ def sOD(number):
       
 number=input("enter number: ")
 print(sOD(number))
+
+######### Solution 2 by Negar Deilami 3.15.25 
+num = input('enter a number: ')
+Sum = 0
+for i in range(len(num)):
+    Sum += int(num[i])
+print(f"the sum of the digits of the number you entered is: {Sum}")

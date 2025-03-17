@@ -14,16 +14,16 @@ else:
     print("The string is not a palindrome.")
 
 
-#new_solution:
-string=input("enter a string: ")
-string
-R_word=""
-for i in string:
-    R_word=i+R_word
-if (string == new_word):
-    print(f"{string} = {R_word}\n{string} is palindrome")
-else:
-    print(f"{string} != {R_word}\n{string} isn't a palindrome!" )
+# #new_solution:
+# string=input("enter a string: ")
+# string
+# R_word=""
+# for i in string:
+#     R_word=i+R_word
+# if (string == new_word):
+#     print(f"{string} = {R_word}\n{string} is palindrome")
+# else:
+#     print(f"{string} != {R_word}\n{string} isn't a palindrome!" )
 
 
 def is_palindrome_two_pointer(string):
@@ -48,3 +48,18 @@ test_strings = ["radar", "Hello", "A man a plan a canal Panama", "race a car"]
 for test_str in test_strings:
     result = is_palindrome_two_pointer(test_str)
     print(f'"{test_str}" -> {"is" if result else "is not"} a palindrome')
+
+
+######### Solution by Negar Deilami 3.8.25 
+string1 = input('give me a string: ')
+lenStr = len(string1)
+Flag = True
+for i in range(lenStr): 
+    if(string1[i] == (string1[lenStr-1-i])):
+        Flag = True
+    else :
+        Flag = False
+if Flag :
+    print('your string is Palindrome! (～￣▽￣)～')
+else : 
+    print('your string is not Palindrome (┬┬﹏┬┬)')

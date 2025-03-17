@@ -1,4 +1,4 @@
-Reverse String: Write a program that takes a string as input and outputs the string reversed.
+# Reverse String: Write a program that takes a string as input and outputs the string reversed.
 
 def reverse_string(input_string):
   reversed_str = input_string[::-1]
@@ -18,3 +18,8 @@ def reverse(string):
 string=input("enter string:")
 print(f"orginal string: {string}")
 reverse(string)
+
+######### Solution 3 by Negar Deilami 3.12.25
+print()
+theString = input('give me a String I will reverse it for you: ')
+print(theString[::-1])

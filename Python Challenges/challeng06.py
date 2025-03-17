@@ -38,4 +38,27 @@ else:
     print("Element is not present in array")
 
 
+######## Solution 2 by Negar Deilami 3.15.25 
+
+def binarySearch(targetvalue,list1):
+    list2 = list1
+    list1.sort()
+    max = list1[-1]
+    min = list1[0]
+    while min <= targetvalue <= max :
+        if list1[int(len(list1)/2)] > targetvalue :
+            list1 = list1[:len(list1)//2]
+            if list1[-1] < targetvalue:
+             return(print('Target not found'))
+        elif list1[int(len(list1)/2)] < targetvalue :
+            list1 = list1[len(list1)//2:]
+            if list1[0] > targetvalue:
+                return(print('Target not found'))
+        elif targetvalue == list1[int(len(list1)/2)]:
+          return(print('the Target Value is positioned in array', list2.index(targetvalue)))
+    else :
+         return(print('Target is not within range'))
+
+binarySearch(12,[2,3,4,1,7])
+
 

@@ -4,3 +4,11 @@ def Count(text):
     return result
 string=input("enter string : ")
 print(Count(string))
+
+
+######### Solution 2 by Negar Deilami 3.13.25
+string1 = input('give me a string, I will count the number of characters: ')
+count =0
+for i in string1 :
+    count += 1
+print(f"your string is composed of \033[1m{count}\033[0m characters")
