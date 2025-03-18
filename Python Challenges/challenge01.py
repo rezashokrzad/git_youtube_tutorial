@@ -12,6 +12,7 @@ for i in range(1, 101):
 
 
 #new solution:
+
 def res(i):
     if i %15==0:
         return f"{i} : FizzBuzz"

@@ -26,3 +26,5 @@ def CountOfWord(text):
     return len([i for i in text.split() if i.isalpha()])
 text=input("enter string: ")
 print(CountOfWord(text))
+
+
