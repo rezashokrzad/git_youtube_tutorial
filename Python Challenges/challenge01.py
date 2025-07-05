@@ -26,3 +26,31 @@ def res(i):
     
 for i in range(1,101):
     print(res(i))
+
+
+# Object-oriented solution:
+class FizzBuzz:
+    def __init__(self, start: int = 1, end: int = 100):
+        self.start = start
+        self.end = end
+
+    def check(self, number: int) -> str:
+        if number % 15 == 0:
+            return f"{number} : FizzBuzz"
+        elif number % 3 == 0:
+            return f"{number} : Fizz"
+        elif number % 5 == 0:
+            return f"{number} : Buzz"
+        else:
+            return str(number)
+
+    def run(self):
+        for i in range(self.start, self.end + 1):
+            print(self.check(i))
+
+
+# Instantiate and run the FizzBuzz logic
+if __name__ == "__main__":
+    fb = FizzBuzz()
+    fb.run()
+
