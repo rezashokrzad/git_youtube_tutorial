@@ -23,3 +23,18 @@ num3 = 1
 for i in range(1,number3+1):
     num3 = num3 * i
 print(num3)
+
+# new solution by Mehrshad Hekmatara
+number = 5
+
+if number < 0:
+    print("Factorial is not defined for negative numbers!")
+else:
+    factorial = 1
+    counter = number
+
+    while counter > 0:
+        factorial *= counter
+        counter -= 1
+
+    print(f"Factorial of {number} is {factorial}")
